@@ -36,7 +36,7 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
         ])
     }
 
-    prefabs.plane.instantiate(map, 0);
+    prefabs.dormhall.instantiate(map, 0);
 
     // Example: Run code on every note!
 

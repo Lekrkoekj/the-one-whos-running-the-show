@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: 3edf41fcb93b27e428a16dd7dcdc3f1d
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cat
+    second: {fileID: 2100000, guid: ad9175221b359dc4eab69b19ddcbde7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Checkered Rug
+    second: {fileID: 2100000, guid: 9508b887f011afa4fb9c7801dd972f5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Checkers
+    second: {fileID: 2100000, guid: a4b449b66b42a2a4a875bafb80718efe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cloth
+    second: {fileID: 2100000, guid: 40231741804a0d4489505ac7069f73f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Creature
+    second: {fileID: 2100000, guid: b24165b68b905874f80db4997d351ca5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cyclops
+    second: {fileID: 2100000, guid: e42c33029cb4c08479633e5e77570d90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark Wood (Shiny)
+    second: {fileID: 2100000, guid: df5dd9cae754894439c4a943472cb8bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dinosaur
+    second: {fileID: 2100000, guid: c74e0bfb2be927542aec16ade9034984, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dog
+    second: {fileID: 2100000, guid: b6afd7ee38989954b9d8521b36db35d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emissive
+    second: {fileID: 2100000, guid: b6c5e4ae77453bb4da28992e67a45d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gangle
+    second: {fileID: 2100000, guid: 36b2171be8f77e54bb1bd983f121ac87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jax
+    second: {fileID: 2100000, guid: 7f9633e8684103e4982119f82750b96c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jester
+    second: {fileID: 2100000, guid: b4828095bd26b6347bebc8eb8075c09d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kaufmo
+    second: {fileID: 2100000, guid: ad1987aa8ed1144489789a5d81f57473, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kinger
+    second: {fileID: 2100000, guid: be9aff20f1b37f648b22aebd3e754d0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mannequin
+    second: {fileID: 2100000, guid: 0a0c9e1303a9d3449b39bcaabe8790bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 00bad1ffb7b15364cb5319999436aeef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Painting Frame
+    second: {fileID: 2100000, guid: e886c722d2585ef4f97c0933133797d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plant
+    second: {fileID: 2100000, guid: 45b85b39dd3dc684c9317397ad7def95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic
+    second: {fileID: 2100000, guid: 04255ee0bc086f640a081cf52b8d69d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pomni
+    second: {fileID: 2100000, guid: 2b71afdef4c16f142a01bb186ef4537e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Puppet
+    second: {fileID: 2100000, guid: 7f356955b5b4c584aa3af336dadad44a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Queenie
+    second: {fileID: 2100000, guid: 10cd63fe2b0485d4f9802c44cd956eb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ragatha
+    second: {fileID: 2100000, guid: 890c5bc05f6c54740b5a7aa4c35033d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ribbit
+    second: {fileID: 2100000, guid: 3685132214675314fb09f0093befa7c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubber
+    second: {fileID: 2100000, guid: 2fbdd9190fb652e4eb19bd5e9610eb9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sad Clown
+    second: {fileID: 2100000, guid: 42ca5146c3cf8d64a967a209731739a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto
+    second: {fileID: 2100000, guid: dc55eee1c84730b4688e3018ae1b604d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.001
+    second: {fileID: 2100000, guid: fe7718735e7d9a34c895fa99f4304fd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.002
+    second: {fileID: 2100000, guid: 06df86595fdce4c459b5c1fc672d734f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.003
+    second: {fileID: 2100000, guid: 6b89cf976f64f054a8b0248073e99101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.004
+    second: {fileID: 2100000, guid: 50551585a0df32b4db228abd2fc6e286, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.005
+    second: {fileID: 2100000, guid: c85bafb96dd67cd47b1633d08e13ee3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.006
+    second: {fileID: 2100000, guid: 33b20a70f0e93814caa5eec40ad2d227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.007
+    second: {fileID: 2100000, guid: 7e9bd9b3496e00445a3528b1328b9939, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.008
+    second: {fileID: 2100000, guid: 849565965275431429f96f834c6868cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.011
+    second: {fileID: 2100000, guid: 3b4b779a8ea5fab40a946ef3903ecb22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.012
+    second: {fileID: 2100000, guid: 6a344bbb6e3b90946a0da50507662810, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.013
+    second: {fileID: 2100000, guid: 78cd3c1ade825ee4e99fcba6c0deb122, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.014
+    second: {fileID: 2100000, guid: 674d57c44e9ef1d42b923b4f3368df74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.016
+    second: {fileID: 2100000, guid: 33a440de33a967946a93efe815837bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.017
+    second: {fileID: 2100000, guid: 811acffab13c77546af450875010491b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.018
+    second: {fileID: 2100000, guid: 4b9eb53097e9649499beef15980a8b16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.019
+    second: {fileID: 2100000, guid: effb7204ea616ee48b1004d4caebc1f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.020
+    second: {fileID: 2100000, guid: 7c60ec96c60ad39449f974eeb2da0c13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.021
+    second: {fileID: 2100000, guid: cea3c5c318b4d5a46a16c25af84ed232, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.022
+    second: {fileID: 2100000, guid: debb377246ada054ca7dc8e859854eb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.023
+    second: {fileID: 2100000, guid: 23a795358ee3e09439a4d59cc3d00658, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.024
+    second: {fileID: 2100000, guid: 8916ad2370567424bbbf0231cf172922, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.026
+    second: {fileID: 2100000, guid: e5e19310c6ae4304fade26731f7757cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.027
+    second: {fileID: 2100000, guid: 47b6d8a1ebaad674289b28366afded94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.029
+    second: {fileID: 2100000, guid: 5325fd5257249e647bd07c60fda75615, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.030
+    second: {fileID: 2100000, guid: 1a0a84a206cc2034f8320e6a84d9a4ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.031
+    second: {fileID: 2100000, guid: a2ebbfb1747204b498faa96cd39493dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.032
+    second: {fileID: 2100000, guid: b7c2d4cb0e9be3947b895679c39988ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallPhoto.033
+    second: {fileID: 2100000, guid: ec18a5da756caa74a9a11329e08f5ac1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2100000, guid: 3feb5529e73628c4c84d1031d723d739, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 8a53ec47fbe4bf34c8666c473af47b79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Worm
+    second: {fileID: 2100000, guid: 01e873e37f8af8245ab80fda45a99fba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zooble
+    second: {fileID: 2100000, guid: 7b09be7e8695e1d46a75dc587b12824e, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

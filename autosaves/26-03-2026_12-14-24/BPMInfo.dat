@@ -1,0 +1,187 @@
+{
+  "_version" : "2.0.0",
+  "_songSampleCount" : 6297062,
+  "_songFrequency" : 48000,
+  "_regions" : [
+    {
+      "_startSampleIndex" : 0,
+      "_endSampleIndex" : 83876,
+      "_startBeat" : 0,
+      "_endBeat" : 3
+    },
+    {
+      "_startSampleIndex" : 83876,
+      "_endSampleIndex" : 134336,
+      "_startBeat" : 3,
+      "_endBeat" : 4
+    },
+    {
+      "_startSampleIndex" : 134336,
+      "_endSampleIndex" : 152941,
+      "_startBeat" : 4,
+      "_endBeat" : 5
+    },
+    {
+      "_startSampleIndex" : 152941,
+      "_endSampleIndex" : 171025,
+      "_startBeat" : 5,
+      "_endBeat" : 6
+    },
+    {
+      "_startSampleIndex" : 171025,
+      "_endSampleIndex" : 189474,
+      "_startBeat" : 6,
+      "_endBeat" : 7
+    },
+    {
+      "_startSampleIndex" : 189474,
+      "_endSampleIndex" : 203215,
+      "_startBeat" : 7,
+      "_endBeat" : 8
+    },
+    {
+      "_startSampleIndex" : 203215,
+      "_endSampleIndex" : 214947,
+      "_startBeat" : 8,
+      "_endBeat" : 9
+    },
+    {
+      "_startSampleIndex" : 214947,
+      "_endSampleIndex" : 225343,
+      "_startBeat" : 9,
+      "_endBeat" : 10
+    },
+    {
+      "_startSampleIndex" : 225343,
+      "_endSampleIndex" : 235583,
+      "_startBeat" : 10,
+      "_endBeat" : 11
+    },
+    {
+      "_startSampleIndex" : 235583,
+      "_endSampleIndex" : 245824,
+      "_startBeat" : 11,
+      "_endBeat" : 12
+    },
+    {
+      "_startSampleIndex" : 245824,
+      "_endSampleIndex" : 256098,
+      "_startBeat" : 12,
+      "_endBeat" : 13
+    },
+    {
+      "_startSampleIndex" : 256098,
+      "_endSampleIndex" : 266817,
+      "_startBeat" : 13,
+      "_endBeat" : 14
+    },
+    {
+      "_startSampleIndex" : 266817,
+      "_endSampleIndex" : 287994,
+      "_startBeat" : 14,
+      "_endBeat" : 15
+    },
+    {
+      "_startSampleIndex" : 287994,
+      "_endSampleIndex" : 395994,
+      "_startBeat" : 15,
+      "_endBeat" : 21
+    },
+    {
+      "_startSampleIndex" : 395994,
+      "_endSampleIndex" : 408088,
+      "_startBeat" : 21,
+      "_endBeat" : 22
+    },
+    {
+      "_startSampleIndex" : 408088,
+      "_endSampleIndex" : 701591,
+      "_startBeat" : 22,
+      "_endBeat" : 38
+    },
+    {
+      "_startSampleIndex" : 701591,
+      "_endSampleIndex" : 704458,
+      "_startBeat" : 38,
+      "_endBeat" : 39
+    },
+    {
+      "_startSampleIndex" : 704458,
+      "_endSampleIndex" : 997961,
+      "_startBeat" : 39,
+      "_endBeat" : 55
+    },
+    {
+      "_startSampleIndex" : 997961,
+      "_endSampleIndex" : 1511065,
+      "_startBeat" : 55,
+      "_endBeat" : 86
+    },
+    {
+      "_startSampleIndex" : 1511065,
+      "_endSampleIndex" : 1523479,
+      "_startBeat" : 86,
+      "_endBeat" : 87
+    },
+    {
+      "_startSampleIndex" : 1523479,
+      "_endSampleIndex" : 3611925,
+      "_startBeat" : 87,
+      "_endBeat" : 217
+    },
+    {
+      "_startSampleIndex" : 3611925,
+      "_endSampleIndex" : 3625980,
+      "_startBeat" : 217,
+      "_endBeat" : 218
+    },
+    {
+      "_startSampleIndex" : 3625980,
+      "_endSampleIndex" : 4169423,
+      "_startBeat" : 218,
+      "_endBeat" : 251
+    },
+    {
+      "_startSampleIndex" : 4169423,
+      "_endSampleIndex" : 4177657,
+      "_startBeat" : 251,
+      "_endBeat" : 252
+    },
+    {
+      "_startSampleIndex" : 4177657,
+      "_endSampleIndex" : 5075049,
+      "_startBeat" : 252,
+      "_endBeat" : 295
+    },
+    {
+      "_startSampleIndex" : 5075049,
+      "_endSampleIndex" : 5086463,
+      "_startBeat" : 295,
+      "_endBeat" : 296
+    },
+    {
+      "_startSampleIndex" : 5086463,
+      "_endSampleIndex" : 5565823,
+      "_startBeat" : 296,
+      "_endBeat" : 322
+    },
+    {
+      "_startSampleIndex" : 5565823,
+      "_endSampleIndex" : 5580170,
+      "_startBeat" : 322,
+      "_endBeat" : 323
+    },
+    {
+      "_startSampleIndex" : 5580170,
+      "_endSampleIndex" : 5676170,
+      "_startBeat" : 323,
+      "_endBeat" : 328
+    },
+    {
+      "_startSampleIndex" : 5676170,
+      "_endSampleIndex" : 6297062,
+      "_startBeat" : 328,
+      "_endBeat" : 361.010315
+    }
+  ]
+}

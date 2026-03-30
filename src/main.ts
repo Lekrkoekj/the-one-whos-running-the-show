@@ -145,6 +145,36 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
             "BackColumns"
         ])
 
+        // UI Panels
+        rm.environment(map, {
+            id: "LeftPanel",
+            lookupMethod: "EndsWith",
+            position: [
+                -2.75,
+                0,
+                6.75
+            ],
+            rotation: [
+                0,
+                -20,
+                0
+            ]
+        });
+        rm.environment(map, {
+            id: "RightPanel",
+            lookupMethod: "EndsWith",
+            position: [
+                2.75,
+                0,
+                6.75
+            ],
+            rotation: [
+                0,
+                20,
+                0
+            ]
+        });
+
         // Lasers
         rm.environment(map, {
             id: "RotatingLaserLeft",
@@ -588,23 +618,31 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
 
     prefabs.animatedlyrics.instantiate(map, 0);
     prefabs.dormhall.instantiate(map, 0);
+    prefabs.explosionverse.instantiate(map, 193.75);
+    prefabs.explosionend.instantiate(map, 353.531); 
 
     /// ---------- { EVENTS } ----------
     setDayNightCycle(0, 0, 0, 0, 1);
-    setDayNightCycle(78.75, 1, 0, -0.25, 1/8); 
+    setDayNightCycle(78.75, 1, 0, -0.25, 1/16); 
     setDayNightCycle(87, 3, -1, 0.5, 1/32); 
-    setDayNightCycle(126, 1, 0.75, 0.5, 1/8);
+    setDayNightCycle(126, 1, 0.75, 0.5, 1/16);
     setDayNightCycle(186, 5, 0.75, 0.4, 1/32);
     setDayNightCycle(193.75, 4, 0.75, 0.4, 1/32);
     setDayNightCycle(201.75, 4.25, 0.9, 0.5, 1/32);
     setDayNightCycle(210, 2, 0.75, 0.4, 1/32);
-    setDayNightCycle(216, 1, 0.4, 0.5, 1/8);
-    setDayNightCycle(242.333, 1, 0.5, 0.3, 1/8);
-    setDayNightCycle(252, 28, 0.3, 0.5, 1/64);
+    setDayNightCycle(216, 1, 0.4, 0.5, 1/16);
+    setDayNightCycle(243.75, 1, 0.5, 0, 1/16);
+    setDayNightCycle(252, 24.5, 0, 0.5, 1/64);
+    setDayNightCycle(276.5, 3.5, 0.5, 0.2, 1/16);
     setDayNightCycle(280, 16, 0.5, 0.8, 1/48);
-    setDayNightCycle(335, 1, 0.8, 0.4, 1/8);
-    setDayNightCycle(339, 1, 0.4, -0.25, 1/8);
-    setDayNightCycle(346, 0.25, -0.25, 1, 1/32);
+    setDayNightCycle(320.75, 1, 0.8, 0.3, 1/16);
+    setDayNightCycle(322.937, 1, 0.8, 0.3, 1/16);
+    setDayNightCycle(325, 0.75, 0.8, 0.3, 1/16);
+    setDayNightCycle(325.875, 1, 0.8, 0.3, 1/16);
+    setDayNightCycle(327, 1, 0.3, 0.8 , 1/16);
+    setDayNightCycle(335, 1, 0.8, 0.4, 1/16);
+    setDayNightCycle(339, 1, 0.4, -0.25, 1/16);
+    setDayNightCycle(346.531, 0.25, -0.25, 1, 1/32);
     setDayNightCycle(353.531, 5, 0.8, 0, 1/32);
 }
 

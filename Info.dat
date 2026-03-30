@@ -35,6 +35,9 @@
             "suggestions" : [
               "Chroma"
             ],
+            "_warnings" : [
+              "Cinema is NOT SUPPORTED in the Vivify difficulties. Make sure to turn it off so it doesn't block part of the environment."
+            ],
             "_suggestions" : [
               "Chroma",
               "Cinema"
@@ -46,7 +49,10 @@
             "_colorRight" : {"r":0,"g":0.749,"b":1}
           }
         }
-      ]
+      ],
+      "_customData" : {
+        "_characteristicLabel" : "Vivify (Cinema NOT SUPPORTED)"
+      }
     },
     {
       "_beatmapCharacteristicName" : "Lawless",
@@ -66,10 +72,19 @@
             "_suggestions" : [
               "Chroma",
               "Cinema"
-            ]
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
+            "_colorRight" : {"r":0,"g":0.749,"b":1}
           }
         }
-      ]
+      ],
+      "_customData" : {
+        "_characteristicLabel" : "NO Vivify (Supports Cinema)",
+        "_characteristicIconImageFilename" : "no vivify symbol.png"
+      }
     }
   ],
   "_customData" : {

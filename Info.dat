@@ -33,8 +33,35 @@
           "_environmentNameIdx" : 0,
           "_customData" : {
             "suggestions" : [
+              "Chroma"
+            ],
+            "_suggestions" : [
               "Chroma",
               "Cinema"
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
+            "_colorRight" : {"r":0,"g":0.749,"b":1}
+          }
+        }
+      ]
+    },
+    {
+      "_beatmapCharacteristicName" : "Lawless",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "ExpertPlus",
+          "_difficultyRank" : 9,
+          "_beatmapFilename" : "ExpertPlusLawless.dat",
+          "_noteJumpMovementSpeed" : 17,
+          "_noteJumpStartBeatOffset" : 0,
+          "_beatmapColorSchemeIdx" : 0,
+          "_environmentNameIdx" : 0,
+          "_customData" : {
+            "suggestions" : [
+              "Chroma"
             ],
             "_suggestions" : [
               "Chroma",

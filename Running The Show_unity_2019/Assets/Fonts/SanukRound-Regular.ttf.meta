@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 32d7bbb65029fee4ea1d1bc5e26c454d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FF Sanuk Round
+  fontNames:
+  - FF Sanuk Round
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 32247b92be1dad748be44433e25ecc24, type: 3}
+  - {fileID: 12800000, guid: 91c3f46c22a5bca489a8da6d0f2d981e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

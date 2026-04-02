@@ -3930,8 +3930,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <font-weight="800">It's news to me
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: abbdf27df7467254eb9f8f6ac8787341, type: 2}
-  m_sharedMaterial: {fileID: -7345393431686739990, guid: abbdf27df7467254eb9f8f6ac8787341,
+  m_fontAsset: {fileID: 11400000, guid: 161b6c9c8c4b3884d869c05c8c01d3f5, type: 2}
+  m_sharedMaterial: {fileID: -3580162732450426230, guid: 161b6c9c8c4b3884d869c05c8c01d3f5,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

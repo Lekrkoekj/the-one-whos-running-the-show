@@ -86,6 +86,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseVertexColor: 1
     - _VertexColorIntensity: 1
     - _ZWrite: 1
     m_Colors:

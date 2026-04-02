@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Rubber
   m_Shader: {fileID: 4800000, guid: b2046cad45ab7be4986c37014ba0d22a, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USEVERTEXCOLOR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -86,6 +86,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseVertexColor: 1
     - _VertexColorIntensity: 1
     - _ZWrite: 1
     m_Colors:

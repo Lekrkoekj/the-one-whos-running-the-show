@@ -69,7 +69,7 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _Cutout: 0
-    - _Darkness: 0.2465
+    - _Darkness: 0.1965
     - _DetailNormalMapScale: 1
     - _DitherMaskScale: 40
     - _DstBlend: 0

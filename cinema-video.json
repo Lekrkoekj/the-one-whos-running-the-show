@@ -4,7 +4,7 @@
   "author": "GLITCH",
   "videoFile": "DIGITAL CIRCUS - “The One Who's Running the Show” [Official Music Video].mp4",
   "duration": 131,
-  "offset": -1601,
+  "offset": -1661,
   "playbackSpeed": 1.0,
   "loop": false,
   "configByMapper": true,
@@ -12,7 +12,7 @@
   "screenPosition": {
     "x": 0.0,
     "y": 10.0,
-    "z": 70
+    "z": 70.0
   },
   "screenHeight": 20.0,
   "bloom": 2.0,

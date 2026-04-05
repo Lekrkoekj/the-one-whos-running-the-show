@@ -18,7 +18,7 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
     const map = await rm.readDifficultyV3(pipeline, file)
 
     if(!noVivify) map.require("Vivify", true);
-    if(!noVivify) map.require("Noodle Extensions", true);
+    map.require("Noodle Extensions", true);
     map.suggest("Chroma", true);
 
     /// ---------- { FUNCTIONS } ----------
@@ -357,8 +357,10 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
 
     // Reduce reaction time for speed up at the end
     map.allNotes.forEach(note => {
-        if(note.beat >= 296 && note.beat <= 335) {
-            note.noteJumpStartBeatOffset = 0
+        if(map.difficultyInfo.difficulty == "ExpertPlus") {
+            if(note.beat >= 296 && note.beat <= 335) {
+                note.noteJumpStartBeatOffset = 0
+            }
         }
     })
 
@@ -370,12 +372,11 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
         .forEach(n => spinNoteKeys.add(`${n.beat}-${n.x}-${n.y}`))
 
     map.allNotes.forEach(note => {
-        
         const key = `${note.beat}-${note.x}-${note.y}`
         const isSpinNote = spinNoteKeys.has(key)
         
         if (isSpinNote) {
-            note.track.value = 'spinBody'
+            if(map.difficultyInfo.characteristic != "Lawless") note.track.value = 'spinBody'
         } else {
             note.track.add('noteTrack')
             note.track.add('allNotes')
@@ -399,6 +400,7 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
 
     // Create fake arrow notes for spin section
     if (!noVivify) {
+        
         map.colorNotes
             .filter(n => n.beat >= 252 && n.beat < 263)
             .forEach(note => {
@@ -550,14 +552,16 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
             ]
         }
     })*/
-    map.allNotes.forEach(note => {
-        if(note.track.has("spinBody")) {
-            note.animation.localRotation = [
-                [0, 0, 90, 0],
-                [0, 0, 0, 0.4, "easeInOutSine"]
-            ]
-        }
-    })
+   if(map.difficultyInfo.characteristic != "Lawless") {
+        map.allNotes.forEach(note => {
+            if(note.track.has("spinBody")) {
+                note.animation.localRotation = [
+                    [0, 0, 90, 0],
+                    [0, 0, 0, 0.4, "easeInOutSine"]
+                ]
+            }
+        })
+    }
 
     // ─── NOTE TRACK ANIMATIONS ───────────────────────────────────────────────
     // "don't need to SCREAM"
@@ -658,7 +662,7 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
 
     // "what a GODDAMN SHAME" *stomp*
     map.walls.forEach(wall => {
-        if(wall.beat == 243.75) {
+        if(wall.beat >= 243.5 && wall.beat <= 244) {
             wall.noteJumpStartBeatOffset = 0.25
             wall.animation = {
                 offsetPosition: [
@@ -748,10 +752,16 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
 
 }
 
-
 await Promise.all([
+    // Vivify diffs
     doMap('ExpertPlusStandard', false),
-    doMap('ExpertPlusLawless', true)
+    doMap('HardStandard', false),
+    doMap('EasyStandard', false),
+
+    // Non-vivify diffs
+    doMap('ExpertPlusLawless', true),
+    doMap('HardLawless', true),
+    doMap('EasyLawless', true),
 ])
 
 // ----------- { OUTPUT } -----------

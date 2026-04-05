@@ -24,10 +24,33 @@
       "_beatmapCharacteristicName" : "Standard",
       "_difficultyBeatmaps" : [
         {
-          "_difficulty" : "Expert",
-          "_difficultyRank" : 7,
-          "_beatmapFilename" : "ExpertStandard.dat",
-          "_noteJumpMovementSpeed" : 17,
+          "_difficulty" : "Easy",
+          "_difficultyRank" : 1,
+          "_beatmapFilename" : "EasyStandard.dat",
+          "_noteJumpMovementSpeed" : 14,
+          "_noteJumpStartBeatOffset" : -0.75,
+          "_beatmapColorSchemeIdx" : 0,
+          "_environmentNameIdx" : 0,
+          "_customData" : {
+            "suggestions" : [
+              "Chroma"
+            ],
+            "_difficultyLabel" : "Running",
+            "_suggestions" : [
+              "Chroma"
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
+            "_colorRight" : {"r":0,"g":0.749,"b":1}
+          }
+        },
+        {
+          "_difficulty" : "Hard",
+          "_difficultyRank" : 5,
+          "_beatmapFilename" : "HardStandard.dat",
+          "_noteJumpMovementSpeed" : 15,
           "_noteJumpStartBeatOffset" : 0.125,
           "_beatmapColorSchemeIdx" : 0,
           "_environmentNameIdx" : 0,
@@ -35,6 +58,7 @@
             "suggestions" : [
               "Chroma"
             ],
+            "_difficultyLabel" : "The",
             "_suggestions" : [
               "Chroma"
             ],
@@ -57,6 +81,7 @@
             "suggestions" : [
               "Chroma"
             ],
+            "_difficultyLabel" : "Show",
             "_suggestions" : [
               "Chroma"
             ],
@@ -76,6 +101,52 @@
       "_beatmapCharacteristicName" : "Lawless",
       "_difficultyBeatmaps" : [
         {
+          "_difficulty" : "Easy",
+          "_difficultyRank" : 1,
+          "_beatmapFilename" : "EasyLawless.dat",
+          "_noteJumpMovementSpeed" : 14,
+          "_noteJumpStartBeatOffset" : -0.75,
+          "_beatmapColorSchemeIdx" : 0,
+          "_environmentNameIdx" : 0,
+          "_customData" : {
+            "suggestions" : [
+              "Chroma"
+            ],
+            "_difficultyLabel" : "Running",
+            "_suggestions" : [
+              "Chroma"
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
+            "_colorRight" : {"r":0,"g":0.749,"b":1}
+          }
+        },
+        {
+          "_difficulty" : "Hard",
+          "_difficultyRank" : 5,
+          "_beatmapFilename" : "HardLawless.dat",
+          "_noteJumpMovementSpeed" : 15,
+          "_noteJumpStartBeatOffset" : 0.125,
+          "_beatmapColorSchemeIdx" : 0,
+          "_environmentNameIdx" : 0,
+          "_customData" : {
+            "suggestions" : [
+              "Chroma"
+            ],
+            "_difficultyLabel" : "The",
+            "_suggestions" : [
+              "Chroma"
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
+            "_colorRight" : {"r":0,"g":0.749,"b":1}
+          }
+        },
+        {
           "_difficulty" : "ExpertPlus",
           "_difficultyRank" : 9,
           "_beatmapFilename" : "ExpertPlusLawless.dat",
@@ -87,13 +158,20 @@
             "suggestions" : [
               "Chroma"
             ],
+            "_difficultyLabel" : "Show",
+            "_suggestions" : [
+              "Chroma"
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
             "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
             "_colorRight" : {"r":0,"g":0.749,"b":1}
           }
         }
       ],
       "_customData" : {
-        "_characteristicLabel" : "NO Vivify & Noodle",
+        "_characteristicLabel" : "NO Vivify",
         "_characteristicIconImageFilename" : "no vivify symbol.png"
       }
     }

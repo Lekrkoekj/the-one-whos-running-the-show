@@ -3,7 +3,7 @@
   "_songName" : "The One Who's Running the Show",
   "_songSubName" : "",
   "_songAuthorName" : "The Amazing Digital Circus",
-  "_levelAuthorName" : "Lekrkoekj",
+  "_levelAuthorName" : "Lekrkoekj & Pixy31",
   "_beatsPerMinute" : 100,
   "_songTimeOffset" : 0,
   "_shuffle" : 0,
@@ -24,23 +24,41 @@
       "_beatmapCharacteristicName" : "Standard",
       "_difficultyBeatmaps" : [
         {
-          "_difficulty" : "ExpertPlus",
-          "_difficultyRank" : 9,
-          "_beatmapFilename" : "ExpertPlusStandard.dat",
+          "_difficulty" : "Expert",
+          "_difficultyRank" : 7,
+          "_beatmapFilename" : "ExpertStandard.dat",
           "_noteJumpMovementSpeed" : 17,
-          "_noteJumpStartBeatOffset" : 0,
+          "_noteJumpStartBeatOffset" : 0.125,
           "_beatmapColorSchemeIdx" : 0,
           "_environmentNameIdx" : 0,
           "_customData" : {
             "suggestions" : [
               "Chroma"
             ],
-            "_warnings" : [
-              "Cinema is NOT SUPPORTED in the Vivify difficulties. Make sure to turn it off so it doesn't block part of the environment."
+            "_suggestions" : [
+              "Chroma"
+            ],
+            "_requirements" : [
+              "Noodle Extensions"
+            ],
+            "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
+            "_colorRight" : {"r":0,"g":0.749,"b":1}
+          }
+        },
+        {
+          "_difficulty" : "ExpertPlus",
+          "_difficultyRank" : 9,
+          "_beatmapFilename" : "ExpertPlusStandard.dat",
+          "_noteJumpMovementSpeed" : 17,
+          "_noteJumpStartBeatOffset" : 0.125,
+          "_beatmapColorSchemeIdx" : 0,
+          "_environmentNameIdx" : 0,
+          "_customData" : {
+            "suggestions" : [
+              "Chroma"
             ],
             "_suggestions" : [
-              "Chroma",
-              "Cinema"
+              "Chroma"
             ],
             "_requirements" : [
               "Noodle Extensions"
@@ -51,7 +69,7 @@
         }
       ],
       "_customData" : {
-        "_characteristicLabel" : "Vivify (Cinema NOT SUPPORTED)"
+        "_characteristicLabel" : "Vivify"
       }
     },
     {
@@ -69,20 +87,13 @@
             "suggestions" : [
               "Chroma"
             ],
-            "_suggestions" : [
-              "Chroma",
-              "Cinema"
-            ],
-            "_requirements" : [
-              "Noodle Extensions"
-            ],
             "_colorLeft" : {"r":1,"g":0.543,"b":0.098},
             "_colorRight" : {"r":0,"g":0.749,"b":1}
           }
         }
       ],
       "_customData" : {
-        "_characteristicLabel" : "NO Vivify (Supports Cinema)",
+        "_characteristicLabel" : "NO Vivify & Noodle",
         "_characteristicIconImageFilename" : "no vivify symbol.png"
       }
     }
@@ -94,6 +105,18 @@
         "version" : "0.13.892"
       }
     },
+    "_contributors" : [
+      {
+        "_name" : "Lekr",
+        "_role" : "Mapping, Vivify Environment, Lighting, Noodle Animations",
+        "_iconPath" : "lekr.png"
+      },
+      {
+        "_name" : "Pixy",
+        "_role" : "Noodle Animations",
+        "_iconPath" : "pixy.png"
+      }
+    ],
     "_editors" : {
       "_lastEditedBy" : "ChroMapper",
       "ChroMapper" : {

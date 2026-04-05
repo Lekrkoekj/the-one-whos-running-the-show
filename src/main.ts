@@ -2,6 +2,7 @@ import * as rm from "https://deno.land/x/remapper@4.2.0/src/mod.ts"
 import * as bundleInfo from '../bundleinfo.json' with { type: 'json' }
 import { MODS } from "https://deno.land/x/remapper@4.1.0/src/constants/beatmap.ts";
 import assets from "../bundleinfo.json" with { type: 'json' }
+import { easeInOutSine } from "https://deno.land/x/remapper@4.2.0/src/utils/math/easing_functions.ts";
 
 
 const pipeline = await rm.createPipeline({ bundleInfo })
@@ -19,7 +20,6 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
     if(!noVivify) map.require("Vivify", true);
     if(!noVivify) map.require("Noodle Extensions", true);
     map.suggest("Chroma", true);
-    if(noVivify) map.suggest("Cinema", true);
 
     /// ---------- { FUNCTIONS } ----------
 
@@ -355,14 +355,22 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
     setDayNightCycle(346.531, 0.25, -0.25, 1, 1/32);
     setDayNightCycle(353.531, 5, 0.8, 0, 1/32);
 
+    // Reduce reaction time for speed up at the end
+    map.allNotes.forEach(note => {
+        if(note.beat >= 296 && note.beat <= 335) {
+            note.noteJumpStartBeatOffset = 0
+        }
+    })
+
     /// ---------- { PIXY STUFF } ----------
 
     const spinNoteKeys = new Set<string>()
     map.colorNotes
-        .filter(n => n.beat >= 252 && n.beat < 263)
+        .filter(n => n.beat >= 252 && n.beat < 263 && n)
         .forEach(n => spinNoteKeys.add(`${n.beat}-${n.x}-${n.y}`))
 
     map.allNotes.forEach(note => {
+        
         const key = `${note.beat}-${note.x}-${note.y}`
         const isSpinNote = spinNoteKeys.has(key)
         
@@ -443,6 +451,7 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
             colorNotes: {
                 track: 'spinBody',
                 asset: prefabs.customnotebodyonly.path,
+                debrisAsset: prefabs.customnotedebris.path
             }
         })
 
@@ -527,20 +536,31 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
     }
 
     // ─── SPIN ANIMATION ──────────────────────────────────────────────────────
-    rm.animateTrack(map, {
+    /*rm.animateTrack(map, {
         beat: 252,
         duration: 11,
         track: 'spinBody',
         animation: {
             localRotation: [
                 [0, 0, 0, 0],
-                [0, 0, 180, 0.5, 'easeInOutSine'],
+                [0, 0, 180, 0.25, 'easeInOutSine'],
+                [0, 0, 360, .5, 'easeInOutSine'],
+                [0, 0, 180, 0.75, 'easeInOutSine'],
                 [0, 0, 360, 1, 'easeInOutSine'],
+            ]
+        }
+    })*/
+    map.allNotes.forEach(note => {
+        if(note.track.has("spinBody")) {
+            note.animation.localRotation = [
+                [0, 0, 90, 0],
+                [0, 0, 0, 0.4, "easeInOutSine"]
             ]
         }
     })
 
     // ─── NOTE TRACK ANIMATIONS ───────────────────────────────────────────────
+    // "don't need to SCREAM"
     rm.animateTrack(map, {
         beat: 110,
         duration: 1.5,
@@ -555,10 +575,16 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
         }
     })
 
+    // "why bite the HAND that feeds"
+    map.walls.forEach(wall => {
+        if(wall.beat >= 126 && wall.beat <= 127) {
+            wall.track.add("handWalls")
+        }
+    })
     rm.animateTrack(map, {
         beat: 126,
         duration: 1.5,
-        track: 'noteTrack',
+        track: ["noteTrack", "handWalls"],
         animation: {
             offsetPosition: [
                 [0, 0, 0, 0],
@@ -569,6 +595,7 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
         }
     })
 
+    // shock
     rm.animateTrack(map, {
         beat: 201.75,
         duration: 2,
@@ -603,36 +630,68 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
             ]
         }
     })
-
-    // ─── WALL SHAKE ──────────────────────────────────────────────────────────
+    // "watch where you WALK"
     map.walls.forEach(wall => {
-        if (wall.beat >= 186 && wall.beat <= 191) {
-            wall.track.add("shakeWalls")
+        if(wall.beat >= 209.5 && wall.beat <= 211) {
+            wall.track.add("watchWhereYouWalk")
+        }
+    })
+    rm.animateTrack(map, {
+        beat: 207.5,
+        duration: 3,
+        track: "watchWhereYouWalk",
+        
+        animation: {
+            offsetPosition: [
+                [-3, 1, 0, 0],
+                [-1.25, 0.5, 0, 0.69],
+                [-0.25, 0, 0, 4/5, "easeOutBounce"]
+            ],
+            //// ADD POP IN SCALE EFFECT FOR MORE OF A JUMPSCARE
+            scale: [
+                [0, 0, 0, 0],
+                [0.5, 0.3, 0.5, 0.69],
+                [1, 1, 1, 4/5, "easeOutBounce"]
+            ]
         }
     })
 
-    rm.animateTrack(map, {
-        beat: 186,
-        duration: 6,
-        track: "shakeWalls",
-        animation: {
-            offsetPosition: [
-                [0, 0, 0, 0],
-                [0.6, 0, 0, 0.07],
-                [-0.6, 0, 0, 0.14],
-                [0.5, 0, 0, 0.21],
-                [-0.5, 0, 0, 0.28],
-                [0.6, 0, 0, 0.35],
-                [-0.6, 0, 0, 0.42],
-                [0.4, 0, 0, 0.49],
-                [-0.4, 0, 0, 0.56],
-                [0.5, 0, 0, 0.63],
-                [-0.5, 0, 0, 0.70],
-                [0.3, 0, 0, 0.77],
-                [-0.3, 0, 0, 0.84],
-                [0.1, 0, 0, 0.92],
-                [0, 0, 0, 1],
-            ]
+    // "what a GODDAMN SHAME" *stomp*
+    map.walls.forEach(wall => {
+        if(wall.beat == 243.75) {
+            wall.noteJumpStartBeatOffset = 0.25
+            wall.animation = {
+                offsetPosition: [
+                    [0, 2, 0, 0],
+                    [0, 1, 0, 0.35, "easeOutQuad"],
+                    [0, 0, 0, 0.4]
+                ]
+            }
+        }
+    })
+
+    // ─── WALL SHAKE ──────────────────────────────────────────────────────────
+    map.walls.forEach(wall => {
+        if (wall.beat >= 187.25 && wall.beat <= 191) {
+            wall.animation = {
+                offsetPosition: [
+                    [0, 0, 0, 0],
+                    [0.5, 0, 0, 0.07, "easeInOutQuad"],
+                    [-0.5, 0, 0, 0.14, "easeInOutQuad"],
+                    [0.4, 0, 0, 0.21, "easeInOutQuad"],
+                    [-0.4, 0, 0, 0.28, "easeInOutQuad"],
+                    [0.5, 0, 0, 0.35, "easeInOutQuad"],
+                    [-0.5, 0, 0, 0.42, "easeInOutQuad"],
+                    [0.3, 0, 0, 0.49, "easeInOutQuad"],
+                    [-0.3, 0, 0, 0.56, "easeInOutQuad"],
+                    [0.4, 0, 0, 0.63, "easeInOutQuad"],
+                    [-0.4, 0, 0, 0.70, "easeInOutQuad"],
+                    [0.2, 0, 0, 0.77, "easeInOutQuad"],
+                    [-0.2, 0, 0, 0.84, "easeInOutQuad"],
+                    [0.1, 0, 0, 0.92, "easeInOutQuad"],
+                    [0, 0, 0, 1, "easeInOutQuad"],
+                ]
+            }
         }
     })
 
@@ -651,9 +710,9 @@ async function doMap(file: rm.DIFFICULTY_NAME, noVivify: boolean = false) {
         track: 'explodeBombs',
         animation: {
             offsetPosition: [
-                [0, 0, 0, 0],
-                [-8, 3, 0, 1, 'easeOutExpo'],
-                [-8, 3, 0, 1],
+                [0, 0, 0, 0.10],
+                [-4, 3, 0, 1, 'easeOutExpo'],
+                [-4, 3, 0, 1],
             ],
             scale: [
                 [1, 1, 1, 0],

@@ -4,9 +4,9 @@
     {
         [Toggle(DEBRIS)] _Debris ("Debris", Int) = 0
         _CutoutEdgeWidth("Cutout Edge Width", Range(0,0.1)) = 0.02
+        _SolidColor ("Color", Color) = (1,1,1,1)
 
         // Fed in by Vivify per note
-        _Color ("Color", Color) = (1,1,1,1)
         _Cutout ("Cutout", Range(0,1)) = 1
         _CutPlane ("Cut Plane", Vector) = (0, 0, 1, 0)
     }
@@ -50,7 +50,7 @@
 
             // Register GPU instanced properties (apply per-note)
             UNITY_INSTANCING_BUFFER_START(Props)
-            UNITY_DEFINE_INSTANCED_PROP(float4, _Color)
+            UNITY_DEFINE_INSTANCED_PROP(float4, _SolidColor)
             UNITY_DEFINE_INSTANCED_PROP(float, _Cutout)
             UNITY_DEFINE_INSTANCED_PROP(float4, _CutPlane)
             UNITY_INSTANCING_BUFFER_END(Props)
@@ -78,7 +78,7 @@
                 UNITY_SETUP_INSTANCE_ID(i);
 
                 // Fetch our instanced Vivify properties
-                float4 Color = UNITY_ACCESS_INSTANCED_PROP(Props, _Color);
+                float4 Color = UNITY_ACCESS_INSTANCED_PROP(Props, _SolidColor);
                 float Cutout = UNITY_ACCESS_INSTANCED_PROP(Props, _Cutout);
                 float4 CutPlane = UNITY_ACCESS_INSTANCED_PROP(Props, _CutPlane);
 

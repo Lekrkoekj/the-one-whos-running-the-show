@@ -599,6 +599,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomNote
       objectReference: {fileID: 0}
+    - target: {fileID: 6016682218306873217, guid: a72e1457ccecc304fb530790ed305bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6355806357201321275, guid: a72e1457ccecc304fb530790ed305bc3,
         type: 3}
       propertyPath: m_RootOrder

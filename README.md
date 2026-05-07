@@ -1,6 +1,6 @@
 # The One Who's Running the Show - Vivify Beat Saber Custom Map
 
-This is the repository for my map for "The One Who's Running the Show" from The Amazing Digital Circus Episode 8, written and composed by Gooseworx and Dave Capdevielle, and sung by Alex Rochon.
+This is the repository for my map for "The One Who's Running the Show" from The Amazing Digital Circus Episode 8, written and composed by Gooseworx and Dave Capdevielle, and sung by Alex Rochon. This map makes use of the Chroma, Noodle Extensions, and Vivify mods to create a fully custom environment.
 
 ![Screenshot preview of this map looks ingame](screenshot.jpg)
 
